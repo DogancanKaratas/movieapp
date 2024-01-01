@@ -1,1 +1,1 @@
-## Projects ---> https://movie-app-osman.vercel.app/
+## Projects ---> https://movieapp-dogancan.vercel.app/
