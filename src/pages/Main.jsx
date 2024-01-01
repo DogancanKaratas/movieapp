@@ -28,6 +28,7 @@ const Main = () => {
   };
 
   return (
+
     <div>
       <form className="flex justify-center p-2" onSubmit={handleSubmit}>
         <input
@@ -36,6 +37,7 @@ const Main = () => {
           placeholder="Search a movie..."
           ref={inputRef}
         />
+        
         <button className="btn-danger-bordered" type="submit">
           Search
         </button>

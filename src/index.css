@@ -40,7 +40,6 @@ body {
 /* MovieCard Custom CSS */
 .movie {
   background-color: #080f36;
-
   border-radius: 3px;
   box-shadow: 4px 4px 5px rgba(63, 60, 60, 0.5);
   overflow: hidden;
@@ -50,19 +49,20 @@ body {
   position: relative;
   cursor: pointer;
   border: 2px solid #080f36;
+  transition: 0.5s all;
+}
+.movie:hover{
+  transform: scale(1.1);
+  transition: 0.5s all;
 }
 
 .movie img {
   object-fit: cover;
   height: 450px;
   max-width: 100%;
-  transition: 0.5s all;
+  
 }
 
-.movie:hover img {
-  transform: scale(1.1);
-  transition: 0.5s all;
-}
 
 .movie-over {
   position: absolute;
