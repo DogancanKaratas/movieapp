@@ -51,7 +51,7 @@ body {
   border: 2px solid #080f36;
   transition: 0.5s all;
 }
-.movie:hover{
+.movie:hover {
   transform: scale(1.1);
   transition: 0.5s all;
 }
@@ -60,9 +60,7 @@ body {
   object-fit: cover;
   height: 450px;
   max-width: 100%;
-  
 }
-
 
 .movie-over {
   position: absolute;

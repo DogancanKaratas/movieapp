@@ -1,26 +1,16 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
-const Catagories = () => {
+const Categories = () => {
   return (
-    <div className="flex justify-center">
-      <NavLink to="/catagories/1" className="btn-danger-bordered m-2">
-        Action
-      </NavLink>
-      <NavLink to="/catagories/2" className="btn-danger-bordered m-2">
-        Comedy
-      </NavLink>
-      <NavLink to="/catagories/3" className="btn-danger-bordered m-2">
-        Horror
-      </NavLink>
-      <NavLink to="/catagories/4" className="btn-danger-bordered m-2">
-        Romance
-      </NavLink>
-      <NavLink to="/catagories/5" className="btn-danger-bordered m-2">
-        Thriller
-      </NavLink>
+    <div className="flex justify-center flex-col items-center sm:flex-row gap-4 p-6 cursor-pointer bg-[ rgba(34, 54, 71, 0.997)] text-[#080808] dark:text-[#acaaaa]">
+      <NavLink className="p-1.5" to="/">MOVİES</NavLink>
+      <NavLink className="p-1.5" to="/topmovie">TOP-MOVİES</NavLink>
+      <NavLink className="p-1.5" to="/tv">TV SERİES</NavLink>
+      <NavLink className="p-1.5" to="/toptv">TOP-TV SERİES</NavLink>
+      <NavLink className="p-1.5" to="/popular">ALL TREND</NavLink>
     </div>
   );
 };
 
-export default Catagories;
+export default Categories;
