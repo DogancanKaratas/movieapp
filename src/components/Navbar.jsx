@@ -5,6 +5,7 @@ import avatar from "../assets/icons/avatar.png";
 import Switch from "./Switch";
 import { useAuthContext } from "../context/AuthContext";
 import movieicon from "../assets/icons/movieicon.png";
+import { useMovieContext } from "../context/MovieContext";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -12,6 +13,10 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const { logOut, currentUser } = useAuthContext();
+  const { setMovies, allMovies } = useMovieContext();
+  const handleDOMBoxClick = () => {
+    setMovies(allMovies);
+  };
   return (
     <>
       <Disclosure
@@ -20,7 +25,11 @@ export default function Navbar() {
       >
         <div className="mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between">
-            <Link className="pr-2 text-2xl font-semibold" to="/">
+            <Link
+              className="pr-2 text-2xl font-semibold"
+              to="/"
+              onClick={handleDOMBoxClick}
+            >
               <div className="flex gap-3">
                 <img src={movieicon} alt="" className="w-[30px] rounded-full" />{" "}
                 <span>
