@@ -17,3 +17,4 @@
 - LinkedIn: [https://www.linkedin.com/in/dogancan-karatas/]
 - E-posta: [karatasdgncn21@gmail.com]
 
+![Animation33331](https://github.com/DogancanKaratas/movieapp/assets/140513435/da15e15e-1807-4f67-9ef1-5b83fa1a0792)
